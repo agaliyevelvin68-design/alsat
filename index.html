@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Sat Mağazası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Al-Sat Mağazası</h1>
+        <nav>
+            <a href="#">Əsas Səhifə</a> | <a href="#">Məhsullar</a> | <a href="#">Əlaqə</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Xoş gəldin, Elvin!</h2>
+        <p>Bura sənin şəxsi satış platformandır.</p>
+
+        <div class="container">
+            <div class="product-card">
+                <h3>Dodge Challenger</h3>
+                <p>Qiymət: 50,000 AZN</p>
+                <button onclick="alert('Dodge Challenger sifarişiniz qəbul olundu!')">Satın al</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Dodge Charger</h3>
+                <p>Qiymət: 55,000 AZN</p>
+                <button onclick="alert('Dodge Charger sifarişiniz qəbul olundu!')">Satın al</button>
+            </div>
+        </div>
+
+        <section id="contact" style="margin-top: 50px;">
+            <h2>Sifariş vermək istəyirsən?</h2>
+            <form action="https://formspree.io/f/mvoeojvz" method="POST">
+                <input type="text" name="name" placeholder="Adın və Soyadın" required><br>
+                <input type="email" name="email" placeholder="E-poçt ünvanın" required><br>
+                <input type="text" name="phone" placeholder="Telefon nömrən" required><br>
+                <button type="submit">Göndər</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Al-Sat Layihəsi - Bütün hüquqlar qorunur.</p>
+    </footer>
+
+</body>
+</html>
