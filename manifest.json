@@ -1,0 +1,8 @@
+{
+  "name": "Al-Sat Mağazası",
+  "short_name": "Al-Sat",
+  "start_url": "/alsat/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2c3e50"
+}
