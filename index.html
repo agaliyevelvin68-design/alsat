@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="az">
 <head>
-    <title>Al-Sat Layihəsi</title>
+    <meta charset="UTF-8">
+    <title>Al-Sat - Ümumi Bazar</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; text-align: center; color: #333; }
+        header { background: #2c3e50; color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .market-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .card { background: white; color: #333; padding: 15px; border-radius: 15px; width: 220px; border: 1px solid #ccc; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .price { color: #e74c3c; font-weight: bold; font-size: 1.2em; }
+        form { background: white; margin-top: 40px; padding: 20px; border-radius: 15px; display: inline-block; width: 300px; border: 1px solid #ccc; }
+        input { display: block; width: 85%; margin: 10px auto; padding: 12px; border: 2px solid #2c3e50; border-radius: 8px; background: #fff; }
+        button { background: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background: #219150; }
+    </style>
 </head>
 <body>
-    <h1>Xos geldin, Elvin!</h1>
-    <p>Al-Sat praqraminin temeli qoyuldu.</p>
+
+    <header>
+        <h1>Al-Sat - Hər şey burada!</h1>
+        <p>Sənin şəxsi bazarın</p>
+    </header>
+
+    <div class="market-grid">
+        <div class="card">
+            <h3>Dodge Challenger</h3>
+            <p>Güclü əfsanə</p>
+            <p class="price">50,000 AZN</p>
+        </div>
+        <div class="card">
+            <h3>RedMagic 11 Pro</h3>
+            <p>Oyun telefonu</p>
+            <p class="price">2,200 AZN</p>
+        </div>
+        <div class="card">
+            <h3>Parfums de Marly</h3>
+            <p>Lüks ətir</p>
+            <p class="price">450 AZN</p>
+        </div>
+    </div>
+
+    <form action="https://formspree.io/f/mvoeojvz" method="POST">
+        <h2>Sifariş vermək üçün</h2>
+        <input type="text" name="name" placeholder="Adın və Soyadın" required>
+        <input type="text" name="product" placeholder="Nə almaq istəyirsən?" required>
+        <button type="submit">Göndər</button>
+    </form>
+
 </body>
 </html>
