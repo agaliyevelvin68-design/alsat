@@ -2,49 +2,58 @@
 <html lang="az">
 <head>
     <meta charset="UTF-8">
-    <title>Al-Sat - Ümumi Bazar</title>
+    <link rel="manifest" href="manifest.json">
+    <title>Al-Sat - Sənin Bazarın</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; text-align: center; color: #333; }
-        header { background: #2c3e50; color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        body { font-family: 'Arial', sans-serif; background-color: #f4f4f9; margin: 0; padding: 20px; text-align: center; }
+        header { background: #2c3e50; color: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
+        .nav { margin-bottom: 20px; }
+        .nav button { padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; background: #34495e; color: white; }
         .market-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .card { background: white; color: #333; padding: 15px; border-radius: 15px; width: 220px; border: 1px solid #ccc; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .price { color: #e74c3c; font-weight: bold; font-size: 1.2em; }
+        .card { background: white; padding: 20px; border-radius: 15px; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid #ddd; }
+        .price { color: #e74c3c; font-weight: bold; font-size: 1.3em; margin: 10px 0; }
+        .wp-btn { background: #25d366; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; display: inline-block; margin-top: 10px; font-weight: bold; }
         form { background: white; margin-top: 40px; padding: 20px; border-radius: 15px; display: inline-block; width: 300px; border: 1px solid #ccc; }
-        input { display: block; width: 85%; margin: 10px auto; padding: 12px; border: 2px solid #2c3e50; border-radius: 8px; background: #fff; }
-        button { background: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; }
-        button:hover { background: #219150; }
+        input { display: block; width: 85%; margin: 10px auto; padding: 12px; border: 1px solid #ccc; border-radius: 8px; }
+        button.submit-btn { background: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Al-Sat - Hər şey burada!</h1>
-        <p>Sənin şəxsi bazarın</p>
+        <h1>Al-Sat</h1>
+        <p>Hər şey burada!</p>
     </header>
+
+    <div class="nav">
+        <button>Maşınlar</button>
+        <button>Texnologiya</button>
+        <button>Ətirlər</button>
+    </div>
 
     <div class="market-grid">
         <div class="card">
             <h3>Dodge Challenger</h3>
-            <p>Güclü əfsanə</p>
             <p class="price">50,000 AZN</p>
+            <a href="https://wa.me/994500000000?text=Dodge Challenger almaq istəyirəm" class="wp-btn">WhatsApp-da Sifariş</a>
         </div>
         <div class="card">
             <h3>RedMagic 11 Pro</h3>
-            <p>Oyun telefonu</p>
             <p class="price">2,200 AZN</p>
+            <a href="https://wa.me/994500000000?text=RedMagic 11 Pro almaq istəyirəm" class="wp-btn">WhatsApp-da Sifariş</a>
         </div>
         <div class="card">
             <h3>Parfums de Marly</h3>
-            <p>Lüks ətir</p>
             <p class="price">450 AZN</p>
+            <a href="https://wa.me/994500000000?text=Parfums de Marly almaq istəyirəm" class="wp-btn">WhatsApp-da Sifariş</a>
         </div>
     </div>
 
     <form action="https://formspree.io/f/mvoeojvz" method="POST">
         <h2>Sifariş vermək üçün</h2>
-        <input type="text" name="name" placeholder="Adın və Soyadın" required>
+        <input type="text" name="name" placeholder="Adın" required>
         <input type="text" name="product" placeholder="Nə almaq istəyirsən?" required>
-        <button type="submit">Göndər</button>
+        <button type="submit" class="submit-btn">Göndər</button>
     </form>
 
 </body>
